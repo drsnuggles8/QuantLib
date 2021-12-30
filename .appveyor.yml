@@ -19,7 +19,7 @@ for:
       - image: Visual Studio 2022
   before_build:
     - COPY .appveyor\VS2022.props .\Build.props
-    - COPY .appveyor\Unity.props .\Directory.Build.props
+    # - COPY .appveyor\Unity.props .\Directory.Build.props
     - MKDIR C:\Libraries\boost_1_77_0\lib64-msvc-14.3
     - COPY C:\Libraries\boost_1_77_0\lib64-msvc-14.2\libboost_unit_test_framework-vc142-mt-x64-1_77.lib C:\Libraries\boost_1_77_0\lib64-msvc-14.3
   test_script:
